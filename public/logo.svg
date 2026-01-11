@@ -1,0 +1,32 @@
+<svg width="140" height="45" viewBox="0 0 140 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Modern House Icon with gradient -->
+  <defs>
+    <linearGradient id="houseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C98848;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5B826D;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- House base -->
+  <path d="M8 22L18 12L28 22V36C28 36.5304 27.7893 37.0391 27.4142 37.4142C27.0391 37.7893 26.5304 38 26 38H10C9.46957 38 8.96086 37.7893 8.58579 37.4142C8.21071 37.0391 8 36.5304 8 36V22Z" fill="url(#houseGradient)" stroke="#C98848" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Door -->
+  <rect x="14" y="28" width="8" height="10" rx="1" fill="#ffffff" stroke="#C98848" stroke-width="1.5"/>
+  
+  <!-- Window -->
+  <rect x="10" y="24" width="5" height="5" rx="0.5" fill="#ffffff" opacity="0.8"/>
+  <rect x="21" y="24" width="5" height="5" rx="0.5" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Roof accent -->
+  <path d="M18 12L18 8" stroke="#5B826D" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="18" cy="7" r="1.5" fill="#5B826D"/>
+  
+  <!-- Text "AFGOG" -->
+  <text x="36" y="26" font-family="'Arial Black', sans-serif" font-weight="900" font-size="20" fill="#C98848" letter-spacing="-0.5">AFGOG</text>
+  
+  <!-- Subtitle "Property" -->
+  <text x="36" y="35" font-family="Arial, sans-serif" font-weight="600" font-size="10" fill="#5B826D" letter-spacing="1">PROPERTY</text>
+  
+  <!-- Decorative line -->
+  <line x1="36" y1="37" x2="85" y2="37" stroke="#C98848" stroke-width="1" opacity="0.3"/>
+</svg>
