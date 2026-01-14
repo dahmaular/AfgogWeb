@@ -110,7 +110,6 @@ export const Welcome: React.FC = () => {
   const subtitleStyles: React.CSSProperties = {
     fontSize: "20px",
     color: colors.white,
-    opacity: 0.95,
     marginBottom: "16px",
     maxWidth: "600px",
     lineHeight: "1.6",

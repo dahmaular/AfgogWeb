@@ -35,17 +35,6 @@ export const Navbar: React.FC = () => {
     cursor: "pointer",
   };
 
-  const logoIconStyles: React.CSSProperties = {
-    fontSize: "24px",
-  };
-
-  const logoTextStyles: React.CSSProperties = {
-    fontSize: "22px",
-    fontWeight: "800",
-    color: colors.primary,
-    letterSpacing: "0px",
-  };
-
   const navMenuStyles: React.CSSProperties = {
     display: "flex",
     gap: "28px",
@@ -156,7 +145,7 @@ export const Navbar: React.FC = () => {
               <Button
                 variant="secondary"
                 size="small"
-                // onClick={handleUploadProperty}
+                onClick={handleUploadProperty}
               >
                 + Upload Property
               </Button>

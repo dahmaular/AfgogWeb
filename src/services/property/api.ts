@@ -40,7 +40,7 @@ export interface CreatePropertyRequest {
   type: string;
   description: string;
   condition: string;
-  images: string;
+  images: string[];
   mainImage: string;
   agentId: string;
   price: string;
@@ -48,12 +48,21 @@ export interface CreatePropertyRequest {
   bathroom: string;
   size: string;
   facilities: string;
-  carModel?: string;
-  carYear?: string;
 }
 
 export interface CreatePropertyResponse {
   data: PropertyData;
+  message: string;
+  isSuccess: boolean;
+}
+
+export interface Category {
+  _id: string;
+  name: string;
+}
+
+export interface CategoriesResponse {
+  data: Category[];
   message: string;
   isSuccess: boolean;
 }
@@ -76,7 +85,11 @@ export const propertyApi = api.injectEndpoints({
       }),
       invalidatesTags: ['Property'],
     }),
+    getCategories: builder.query<CategoriesResponse, void>({
+      query: () => '/property/categories',
+      providesTags: ['Category'],
+    }),
   }),
 });
 
-export const { useGetPropertiesQuery, useGetSinglePropertyQuery, useCreatePropertyMutation } = propertyApi;
+export const { useGetPropertiesQuery, useGetSinglePropertyQuery, useCreatePropertyMutation, useGetCategoriesQuery } = propertyApi;

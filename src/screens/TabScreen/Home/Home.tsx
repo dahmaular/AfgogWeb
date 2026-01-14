@@ -13,6 +13,8 @@ export const Home: React.FC = () => {
   // Fetch properties from API
   const { data: propertiesData, isLoading, isError } = useGetPropertiesQuery();
 
+  console.log("Properties Data:", propertiesData);
+
   // Transform API data to match the component's expected format
   const featuredProperties = useMemo(() => {
     if (!propertiesData?.data) return [];
